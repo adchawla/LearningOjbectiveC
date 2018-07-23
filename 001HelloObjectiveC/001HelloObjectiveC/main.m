@@ -21,8 +21,10 @@ int main(int argc, const char * argv[]) {
         [greeting release];
         [vipGreeting release];
         [greeter issueGreeting: 0];
-        [greeter issueGreeting: 1];
+        [greeter performSelector:@selector(issueGreeting:) withObject: (id) 1];
+        // [greeter issueGreeting: 1];
         [greeter release];
+
     }
     return 0;
 }
