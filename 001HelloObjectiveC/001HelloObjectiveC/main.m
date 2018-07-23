@@ -13,7 +13,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         Greeter * greeter = [[Greeter alloc] init];
-        [greeter setGreetingText:@"Hello World of Objective C"];
+        Greeting * greeting = [[Greeting alloc] init];
+        [greeting setGreeting:@"Hello World of Objective C"];
+        [greeter setGreeting:greeting];
         [greeter issueGreeting];
         [greeter release];
     }

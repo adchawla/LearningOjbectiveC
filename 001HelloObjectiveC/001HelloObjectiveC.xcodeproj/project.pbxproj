@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46EB8EDA2105FE1300A64CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8ED92105FE1300A64CF8 /* main.m */; };
 		46EB8EE22106014E00A64CF8 /* Greeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8EE12106014E00A64CF8 /* Greeter.m */; };
+		46EB8EE5210643D800A64CF8 /* Greeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8EE4210643D800A64CF8 /* Greeting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		46EB8ED92105FE1300A64CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46EB8EE02106014E00A64CF8 /* Greeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Greeter.h; sourceTree = "<group>"; };
 		46EB8EE12106014E00A64CF8 /* Greeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Greeter.m; sourceTree = "<group>"; };
+		46EB8EE3210643D800A64CF8 /* Greeting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Greeting.h; sourceTree = "<group>"; };
+		46EB8EE4210643D800A64CF8 /* Greeting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Greeting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				46EB8ED92105FE1300A64CF8 /* main.m */,
 				46EB8EE02106014E00A64CF8 /* Greeter.h */,
 				46EB8EE12106014E00A64CF8 /* Greeter.m */,
+				46EB8EE3210643D800A64CF8 /* Greeting.h */,
+				46EB8EE4210643D800A64CF8 /* Greeting.m */,
 			);
 			path = 001HelloObjectiveC;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				46EB8EE22106014E00A64CF8 /* Greeter.m in Sources */,
 				46EB8EDA2105FE1300A64CF8 /* main.m in Sources */,
+				46EB8EE5210643D800A64CF8 /* Greeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Greeting.h"
 
 @interface Greeter : NSObject
 {
-    NSString * greetingText;
+    Greeting * greeting;
 }
-- (NSString *) greetingText;
-- (void) setGreetingText:(NSString *) newText;
+- (Greeting *) greeting;
+- (void) setGreeting:(Greeting *) newGreeting;
 - (void) issueGreeting;
 
 @end

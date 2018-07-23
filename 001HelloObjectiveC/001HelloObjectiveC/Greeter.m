@@ -10,22 +10,22 @@
 
 @implementation Greeter
 
-- (NSString *) greetingText {
-    return greetingText;
+- (Greeting *) greeting {
+    return greeting;
 }
 
-- (void) setGreetingText:(NSString *)newText {
-    [newText retain];
-    [greetingText release];
-    greetingText = newText;
+- (void) setGreeting:(Greeting *)newGreeting {
+    [newGreeting retain];
+    [greeting release];
+    greeting = newGreeting;
 }
 
 -(void) issueGreeting {
-    NSLog(@"%@", [self greetingText]);
+    NSLog(@"%@", [[self greeting] greeting]);
 }
 
 -(void) dealloc {
-    [greetingText release];
+    [greeting release];
     [super dealloc];
 }
 
