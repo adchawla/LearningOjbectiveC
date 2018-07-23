@@ -19,6 +19,7 @@
 - (Greeting *) greeting;
 - (void) setGreeting:(Greeting *) newGreeting;
 - (void) setVipGreeting: (Greeting *) newVipGreeting;
+- (void) setGreetings: (Greeting *) normalGreeting vipGreeting: (Greeting *) vipGreeting;
 - (void) issueGreeting: (int) whichGreeting;
 
 @end

@@ -17,8 +17,7 @@ int main(int argc, const char * argv[]) {
         Greeting * vipGreeting = [[Greeting alloc] init];
         [greeting setGreeting:@"Hello World of Objective C"];
         [vipGreeting setGreeting:@"HELLO WORLD OF OBJECTIVE C"];
-        [greeter setGreeting:greeting];
-        [greeter setVipGreeting:vipGreeting];
+        [greeter setGreetings:greeting vipGreeting:vipGreeting];
         [greeting release];
         [vipGreeting release];
         [greeter issueGreeting: 0];

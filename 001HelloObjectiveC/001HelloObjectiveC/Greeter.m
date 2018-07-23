@@ -30,6 +30,15 @@
     vipGreeting = newVipGreeting;
 }
 
+-(void) setGreetings:(Greeting *)normalGreeting vipGreeting:(Greeting *)newVipGreeting {
+    [normalGreeting retain];
+    [newVipGreeting retain];
+    [greeting release];
+    [vipGreeting release];
+    greeting = normalGreeting;
+    vipGreeting = newVipGreeting;
+}
+
 -(void) issueGreeting:(int) whichGreeting {
     switch(whichGreeting) {
         case 1:
