@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46EB8EF32106704100A64CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8EF22106704100A64CF8 /* main.m */; };
+		46EB8EFB2106709E00A64CF8 /* Band.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8EFA2106709E00A64CF8 /* Band.m */; };
+		46EB8EFE2106714B00A64CF8 /* RockStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB8EFD2106714B00A64CF8 /* RockStar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		46EB8EEF2106704100A64CF8 /* 002RockBandApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 002RockBandApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EB8EF22106704100A64CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46EB8EF92106709E00A64CF8 /* Band.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Band.h; sourceTree = "<group>"; };
+		46EB8EFA2106709E00A64CF8 /* Band.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Band.m; sourceTree = "<group>"; };
+		46EB8EFC2106714B00A64CF8 /* RockStar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RockStar.h; sourceTree = "<group>"; };
+		46EB8EFD2106714B00A64CF8 /* RockStar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockStar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				46EB8EF22106704100A64CF8 /* main.m */,
+				46EB8EF92106709E00A64CF8 /* Band.h */,
+				46EB8EFA2106709E00A64CF8 /* Band.m */,
+				46EB8EFC2106714B00A64CF8 /* RockStar.h */,
+				46EB8EFD2106714B00A64CF8 /* RockStar.m */,
 			);
 			path = 002RockBandApp;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EB8EFB2106709E00A64CF8 /* Band.m in Sources */,
+				46EB8EFE2106714B00A64CF8 /* RockStar.m in Sources */,
 				46EB8EF32106704100A64CF8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
