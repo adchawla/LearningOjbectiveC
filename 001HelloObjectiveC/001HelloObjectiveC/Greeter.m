@@ -31,12 +31,8 @@
 }
 
 -(void) setGreetings:(Greeting *)normalGreeting vipGreeting:(Greeting *)newVipGreeting {
-    [normalGreeting retain];
-    [newVipGreeting retain];
-    [greeting release];
-    [vipGreeting release];
-    greeting = normalGreeting;
-    vipGreeting = newVipGreeting;
+    [self setGreeting:normalGreeting];
+    [self setVipGreeting:newVipGreeting];
 }
 
 -(void) issueGreeting:(int) whichGreeting {
