@@ -14,9 +14,15 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         Greeter * greeter = [[Greeter alloc] init];
         Greeting * greeting = [[Greeting alloc] init];
+        Greeting * vipGreeting = [[Greeting alloc] init];
         [greeting setGreeting:@"Hello World of Objective C"];
+        [vipGreeting setGreeting:@"HELLO WORLD OF OBJECTIVE C"];
         [greeter setGreeting:greeting];
-        [greeter issueGreeting];
+        [greeter setVipGreeting:vipGreeting];
+        [greeting release];
+        [vipGreeting release];
+        [greeter issueGreeting: 0];
+        [greeter issueGreeting: 1];
         [greeter release];
     }
     return 0;

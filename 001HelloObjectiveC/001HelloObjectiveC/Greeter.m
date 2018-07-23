@@ -14,18 +14,39 @@
     return greeting;
 }
 
+- (Greeting *) vipGreeting {
+    return vipGreeting;
+}
+
 - (void) setGreeting:(Greeting *)newGreeting {
     [newGreeting retain];
     [greeting release];
     greeting = newGreeting;
 }
 
--(void) issueGreeting {
-    NSLog(@"%@", [[self greeting] greeting]);
+- (void) setVipGreeting:(Greeting *)newVipGreeting {
+    [newVipGreeting retain];
+    [vipGreeting release];
+    vipGreeting = newVipGreeting;
 }
+
+-(void) issueGreeting:(int) whichGreeting {
+    switch(whichGreeting) {
+        case 1:
+            NSLog(@"%@",[[self vipGreeting] greeting]);
+            break;
+
+        default:
+            NSLog(@"%@", [[self greeting] greeting]);
+            break;
+    }
+
+}
+
 
 -(void) dealloc {
     [greeting release];
+    [vipGreeting release];
     [super dealloc];
 }
 
