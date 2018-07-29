@@ -21,10 +21,14 @@ int main(int argc, const char * argv[]) {
         [myAccumulator addToTotal:100];
         [myAccumulator addToTotal:27];
 
+        NamedAccumulator * myCopyOfSecond = [mySecondAccumulator copy];
         [mySecondAccumulator addToTotal:544];
+
+
 
         NSLog(@"The total in the %@ Accumulator is ... %d", [myAccumulator name], [myAccumulator total]);
         NSLog(@"The total in the %@ Accumulator is ... %d", [mySecondAccumulator name], [mySecondAccumulator total]);
+        NSLog(@"The total in the %@ Accumulator is ... %d", [myCopyOfSecond name], [myCopyOfSecond total]);
     }
     return 0;
 }

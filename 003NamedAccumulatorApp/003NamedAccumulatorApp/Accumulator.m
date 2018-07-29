@@ -19,4 +19,21 @@
 -(void) zeroTotal {
     total = 0;
 }
+- (id)initWithTotal:(int)_total {
+    if (self = [super init]) {
+        total = _total;
+    }
+    return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    id copiedInstance = [[[self class] alloc] initWithTotal:[self total]];
+
+    return copiedInstance;
+}
+
+- (id)init { 
+    return [self initWithTotal:0];
+}
+
 @end

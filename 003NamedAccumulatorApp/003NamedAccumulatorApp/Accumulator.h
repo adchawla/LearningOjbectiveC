@@ -16,4 +16,9 @@
 -(void) addToTotal:(int) amount;
 -(int) total;
 -(void) zeroTotal;
+
+-(id) initWithTotal:(int) total;
+-(id) init;
+
+-(id) copyWithZone:(NSZone *) zone;
 @end

@@ -20,4 +20,6 @@
 -(id) initWithName:(NSString *)_name;
 -(id) init;
 
+-(id) copyWithZone: (NSZone *) zone;
+
 @end

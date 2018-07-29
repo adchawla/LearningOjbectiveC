@@ -23,9 +23,8 @@
 }
 
 -(id) initWithName:(NSString *)_name total:(int) _total {
-    if (self = [super init]) {
+    if (self = [super initWithTotal:_total]) {
         [self setName:_name];
-        total = _total;
     }
     return self;
 }
@@ -38,5 +37,13 @@
     return [self initWithName:@"Default" total:0];
 }
 
+
+- (id)copyWithZone:(NSZone *)zone { 
+    id _super = [super copyWithZone:zone];
+    NSMutableString * _newName = [[NSMutableString alloc] initWithString:[self name]];
+    [_newName appendString:@"'s copy"];
+    [_super setName: _newName];
+    return _super;
+}
 
 @end
